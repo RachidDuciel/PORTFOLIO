@@ -1,15 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
 
 
 :root{
     --violet-doux: #6C63FF;
     --violet-foncé: #534EDD;
     --orange-vif: #FFA725;
-    --gris-tres-fonvé: #333;
+    --gris-tres-foncé: #333;
     --gris-tres-clair: #F8F8F8;
     --gris-clair: #EE3;
 
@@ -42,4 +38,50 @@ header div a {
     font-size: 2.2rem;
     font-weight: bold;
     color: var(--violet-doux);
+}
+
+ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--gris-foncé);
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    color: var(--violet-doux);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    width: 0;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+
+ul LI a:hover::after {
+    width: 100%;
+}
+
+a.actve {
+    color: var(--violet-doux);
+    
+}
+
+a.active::after {
+    width: 100%;
 }
