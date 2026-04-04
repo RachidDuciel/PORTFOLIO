@@ -231,3 +231,108 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translate(-3px);
 }
+
+.projets-sec {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projets-sec h1 {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 3rem;
+}
+
+.projets-sec h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+.projets-sec > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.projets, article {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.art-projets:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.projets-sec img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+article > div {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.art-projets h3 {
+    color: var(--violet-doux);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.art-projets p {
+    color: grey;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.art-projets span {
+    background-color: #f0f0ff;
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.art-projets div div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gris-clair);
+}
+
+.art-projets div div:last-of-type a {
+    text-decoration: none;
+    color: var(--gris-tres-foncé);
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s;
+}
+
+.art-projets div div:last-of-type a:hover {
+    color: var(--violet-doux);
+}
