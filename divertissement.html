@@ -25,51 +25,55 @@
             </ul>
         </nav>
     </header>
-  <main class="entertainment-content">
-     
-        <h1 class="projets-sec">Divertissement</h1>
-        <p>Mon univers numérique : ce qui m'inspire et m'occupe durant mon temps libre.</p>
-    
-
-    <div class="ent-grid">
-        <article class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-gamepad"></i></div>
-            <h3>Gaming</h3>
-            <p>Fan de jeux de stratégie et d'aventures immersives. Actuellement sur des titres qui repoussent les limites du storytelling.</p>
-        </article>
-
-        <article class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-film"></i></div>
-            <h3>Cinéma & Séries</h3>
-            <p>Passionné par la science-fiction et les documentaires technologiques. Le montage vidéo m'intéresse également beaucoup.</p>
-        </article>
-
-        <article class="ent-card">
-            <div class="ent-icon"><i class="fa-solid fa-book-open"></i></div>
-            <h3>Lecture</h3>
-            <p>Lecteur assidu de romans d'anticipation et d'ouvrages sur le développement personnel et l'entrepreneuriat.</p>
-        </article>
-    </div>
-
-    <section class="recommendation-box">
-        <h2>Une recommandation ?</h2>
-        <p>Vous avez un film, un jeu ou un livre qui vous a marqué ? Partagez-le avec moi !</p>
-        
-        <form class="ent-form">
-            <div class="input-row">
-                <input type="text" placeholder="Titre de l'œuvre" required>
-                <select required>
-                    <option value="" disabled selected>Catégorie</option>
-                    <option value="jeu">Jeu Vidéo</option>
-                    <option value="film">Film / Série</option>
-                    <option value="livre">Livre</option>
-                </select>
-            </div>
-            <textarea placeholder="Pourquoi devrais-je y jeter un œil ?" rows="4"></textarea>
-            <button type="submit" class="ent-btn">Envoyer ma pépite</button>
-        </form>
+  
+    <main class="diver-main">
+    <section class="diver-intro">
+        <h1>Espace Détente</h1>
+        <p>En dehors du code, j'aime découvrir de nouveaux univers. <strong>Qu'est-ce que vous me conseillez de regarder ou de tester en ce moment ?</strong></p>
     </section>
-  </main>
+
+    <div class="diver-kayzer">
+        <div class="diver-img L">
+            <img src="image/serie.png" alt="Icône Cinéma" class="floating-icon icon-1">
+            <img src="image/scott.png" alt="Icône Popcorn" class="floating-icon icon-2">
+        </div>
+
+        <section class="form-diver">
+            <form action="#" method="POST" class="form-fun">
+                <h3>Proposez-moi une pépite !</h3>
+                
+                <div class="diver-box">
+                    <label for="type">C'est plutôt quoi ?</label>
+                    <select id="type" name="type">
+                        <option value="film">Un Film</option>
+                        <option value="serie">Une Série</option>
+                        <option value="jeu">Un Jeu Vidéo</option>
+                        <option value="musique">De la Musique</option>
+                    </select>
+                </div>
+
+                <div class="diver-box">
+                    <label for="titre">Titre de l'œuvre</label>
+                    <input type="text" id="titre" name="titre" placeholder="Ex: Inception, Elden Ring..." required>
+                </div>
+
+                <div class="diver-box">
+                    <label for="pourquoi">Pourquoi je devrais tester ?</label>
+                    <textarea id="pourquoi" name="pourquoi" rows="3" placeholder="Dites-moi en quelques mots..."></textarea>
+                </div>
+
+                <button type="submit" class="diver-btn">Envoyer une suggestion 🚀</button>
+            </form>
+        </section>
+
+        <div class="diver-img R">
+            <img src="image/game.png" alt="Icône Manette" class="floating-icon icon-3">
+            <img src="image/film.jpg" alt="Icône Musique" class="floating-icon icon-4">
+        </div>
+
+    </div> 
+</main>
+
     <footer>
         <p>&copy;2026 Mwanapunda Rachid Duciel - Tous droits réservés</p>
         <a href=""><i class="fa-brands fa-github"></i></a>

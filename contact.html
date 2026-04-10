@@ -25,51 +25,43 @@
             </ul>
         </nav>
     </header>
-    <main>
+    
+<main class="contact-main">
+    <section class="contact-info">
+        <h1>Restons en contact</h1>
+        <p>Je suis basé à <strong>Lubumbashi</strong>, disponible pour vos projets.</p>
         
-          <h1 class="projets-sec">Me Contacter</h1>
-             <section class="contact-section">
-            <div class="contact-wrapper">
-                <div class="contact-info">   
-                    <p>Je suis actuellement basé à <strong>Lubumbashi</strong>. N'hésitez pas à me joindre pour toute collaboration.</p>
-                    
-                    <div class="social-contact">
-                        <div class="contact-method">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <span>Localisation</span>
-                                <p>Lubumbashi, RDC</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                           
-                            <div>
-                                <span>WhatsApp <a href=""> <i class="fa-brands fa-whatsapp"></i></a> / Telegram <a href=""> <i class="fa-brands fa-telegram"></i></a></span>
-                                <p>+243 567 897 654</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form action="#" method="post" class="main-contact-form">
-                        <div class="field">
-                            <label for="nom">Nom Complet</label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                        </div>
-                        
-                        <div class="field">
-                            <label for="tel">Téléphone</label>
-                            <input type="tel" id="tel" name="tel" placeholder="+243..." required>
-                        </div>
-
-                        <button type="submit" class="btn-contact">Envoyer le message</button>
-                    </form>
-                </div>
+        <div class="direct-contact">
+            <p><i class="fa-solid fa-phone"></i> +243 98 44 00 260</p>
+            <div class="social-contact">
+                <a href="https://wa.me/243993886722" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://t.me/+243993886722" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i> Telegram</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="contact-id">
+        <form action="#" method="POST" class="contact-form">
+            <div class="contact-input">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            
+            <div class="contact-input">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+243..." required>
+            </div>
+
+            <div class="contact-input">
+                <label for="message">Message (Optionnel)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Comment puis-je vous aider ?"></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Envoyer le message</button>
+        </form>
+    </section>
+</main>
+
     <footer>
         <p>&copy;2026 Mwanapunda Rachid Duciel - Tous droits réservés</p>
         <a href=""><i class="fa-brands fa-github"></i></a>
