@@ -25,8 +25,50 @@
             </ul>
         </nav>
     </header>
-  <main>
-    <h1>Divertissement</h1>
+  <main class="entertainment-content">
+     
+        <h1 class="projets-sec">Divertissement</h1>
+        <p>Mon univers numérique : ce qui m'inspire et m'occupe durant mon temps libre.</p>
+    
+
+    <div class="ent-grid">
+        <article class="ent-card">
+            <div class="ent-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <h3>Gaming</h3>
+            <p>Fan de jeux de stratégie et d'aventures immersives. Actuellement sur des titres qui repoussent les limites du storytelling.</p>
+        </article>
+
+        <article class="ent-card">
+            <div class="ent-icon"><i class="fa-solid fa-film"></i></div>
+            <h3>Cinéma & Séries</h3>
+            <p>Passionné par la science-fiction et les documentaires technologiques. Le montage vidéo m'intéresse également beaucoup.</p>
+        </article>
+
+        <article class="ent-card">
+            <div class="ent-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Lecture</h3>
+            <p>Lecteur assidu de romans d'anticipation et d'ouvrages sur le développement personnel et l'entrepreneuriat.</p>
+        </article>
+    </div>
+
+    <section class="recommendation-box">
+        <h2>Une recommandation ?</h2>
+        <p>Vous avez un film, un jeu ou un livre qui vous a marqué ? Partagez-le avec moi !</p>
+        
+        <form class="ent-form">
+            <div class="input-row">
+                <input type="text" placeholder="Titre de l'œuvre" required>
+                <select required>
+                    <option value="" disabled selected>Catégorie</option>
+                    <option value="jeu">Jeu Vidéo</option>
+                    <option value="film">Film / Série</option>
+                    <option value="livre">Livre</option>
+                </select>
+            </div>
+            <textarea placeholder="Pourquoi devrais-je y jeter un œil ?" rows="4"></textarea>
+            <button type="submit" class="ent-btn">Envoyer ma pépite</button>
+        </form>
+    </section>
   </main>
     <footer>
         <p>&copy;2026 Mwanapunda Rachid Duciel - Tous droits réservés</p>

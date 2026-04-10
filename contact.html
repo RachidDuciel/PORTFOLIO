@@ -25,34 +25,50 @@
             </ul>
         </nav>
     </header>
-    <main class="contact-container">
-    <section class="contact-info">
-        <h1>Contactez-nous</h1>
-        <p>Nous sommes basés à <strong>Lubumbashi</strong> et disponibles pour répondre à vos besoins.</p>
+    <main>
         
-        <div class="direct-contact">
-            <p>Appel direct : <a href="tel:+24378976656">+243 789 766 56</a></p>
-            <div class="social-links">
-                <a href="https://wa.me/24378976656" class="btn whatsapp">WhatsApp</a>
-                <a href="https://t.me/+24378976656" class="btn telegram">Telegram</a>
-            </div>
-        </div>
-    </section>
+          <h1 class="projets-sec">Me Contacter</h1>
+             <section class="contact-section">
+            <div class="contact-wrapper">
+                <div class="contact-info">   
+                    <p>Je suis actuellement basé à <strong>Lubumbashi</strong>. N'hésitez pas à me joindre pour toute collaboration.</p>
+                    
+                    <div class="social-contact">
+                        <div class="contact-method">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Localisation</span>
+                                <p>Lubumbashi, RDC</p>
+                            </div>
+                        </div>
 
-    <section class="contact-form">
-        <h3>Envoyez-nous un message</h3>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Nom complet</label>
-                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        <div class="contact-method">
+                           
+                            <div>
+                                <span>WhatsApp <a href=""> <i class="fa-brands fa-whatsapp"></i></a> / Telegram <a href=""> <i class="fa-brands fa-telegram"></i></a></span>
+                                <p>+243 567 897 654</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="#" method="post" class="main-contact-form">
+                        <div class="field">
+                            <label for="nom">Nom Complet</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+                        
+                        <div class="field">
+                            <label for="tel">Téléphone</label>
+                            <input type="tel" id="tel" name="tel" placeholder="+243..." required>
+                        </div>
+
+                        <button type="submit" class="btn-contact">Envoyer le message</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="phone">Téléphone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Ex: +243..." required>
-            </div>
-            <button type="submit" class="submit-btn">Envoyer</button>
-        </form>
-    </section>
+        </section>
     </main>
     <footer>
         <p>&copy;2026 Mwanapunda Rachid Duciel - Tous droits réservés</p>
